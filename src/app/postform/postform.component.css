@@ -44,3 +44,7 @@ form .btn-post button{
 form .btn-post button[type="submit"]{
     font-weight: bold;
 }
+
+@media screen and (max-width:430px){
+    
+}

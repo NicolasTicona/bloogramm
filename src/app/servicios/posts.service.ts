@@ -1,6 +1,7 @@
 import { Injectable } from '@angular/core';
 import { Http, Response, Headers } from '@angular/http';
 import 'rxjs/Rx'; 
+import * as firebase from 'firebase';
 
 @Injectable()
 export class PostsService {
@@ -27,5 +28,4 @@ export class PostsService {
     return this.http.get(this.URL)
       .map(res => res.json())
   }
-
 }
