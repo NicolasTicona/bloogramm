@@ -39,7 +39,7 @@ nav .login .a-singup{
     font-weight: bold;
 }
 
-@media screen and (max-width:300px){
+@media screen and (max-width:800px){
     nav .nav-logo{
         width: 100%;
         text-align: center;
