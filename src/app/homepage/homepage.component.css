@@ -10,12 +10,9 @@
     margin-bottom: 30px;
 }
 
-@media screen and (max-width:430px){
-    .cont-form-post{
+@media screen and (max-width:800px){
+   .container .cont-form-post{
         width: 100%;
     }
 
-    .cont-form-post app-postform{
-        width: 100%;
-    }
 }
