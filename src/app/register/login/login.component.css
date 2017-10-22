@@ -5,7 +5,7 @@
 
 h3{
     font-size: 45px;
-    color: #3d3d3d;
+    color: #1b1b1c;
     margin-bottom: 15px;
     text-align: center;
 }
@@ -32,6 +32,7 @@ form p{
 }
 
 form p a{
+    color: #ff3143;
     font-weight: bold;
 }
 
@@ -41,12 +42,13 @@ form p a{
 
 .cont-btn button{
     background: #fff;
-    border: 1px solid rgba(74, 64, 219, .3);
-    color: #4a40db;
+    border: 1px solid rgba(0, 114, 207, 0.322);
+    color: #006fcf;
     padding: 10px 15px;
     font-size: 22px;
     border-radius: 2px;
     transition: all .3s ease;
+    cursor: pointer;
 }
 
 .cont-btn button:disabled{
@@ -54,7 +56,7 @@ form p a{
 }
 
 .cont-btn button:hover{
-    background: #4a40db;
+    background: #006fcf;
     color: #fff;
 }
 

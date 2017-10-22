@@ -1,12 +1,14 @@
 <section class="posts">
 
   <div class="publications" *ngFor="let pt of posts">
+
     <div class="post">
       <div class="date">
         <p>{{pt.date | date:'d/M/y H:m'}} - {{pt.email}} </p>
       </div>
-      <p>{{pt.post}}</p>
+      <p>- {{pt.post}}</p>
     </div>
+
   </div>
 
 </section>
