@@ -40,6 +40,13 @@ nav .login .a-singup{
 }
 
 @media screen and (max-width:800px){
+
+    nav{
+        width: 100%;
+        text-align: center;
+        align-content: center;
+    }
+
     nav .nav-logo{
         width: 100%;
         text-align: center;
