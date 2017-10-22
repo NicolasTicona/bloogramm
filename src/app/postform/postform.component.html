@@ -1,0 +1,10 @@
+<form [formGroup]="postForm" (ngSubmit)="onSubmit()">
+
+    <textarea formControlName="post" placeholder="Postea algo..."></textarea>
+   
+    <div class="btn-post">
+        <button type="button" id="Cancelar">Cancelar</button>
+        <button type="submit">Postear</button>
+    </div>
+
+</form>

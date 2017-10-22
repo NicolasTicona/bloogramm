@@ -1,0 +1,11 @@
+.container{
+    width: 70%;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.container .cont-form-post{
+    width: 50%;
+    margin: auto;
+    margin-bottom: 30px;
+}

@@ -1,0 +1,39 @@
+header{
+    width: 100%;
+    margin-bottom: 50px;
+    background: #fff;
+    border-bottom: 1px solid rgb(235, 235, 235);
+}
+
+nav{
+    width: 70%;
+    margin: auto;
+    padding: 15px 0;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav .nav-logo h2{
+    font-size: 35px;
+    color: #3d3d3d;
+}
+
+
+nav .login{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+nav .login a{
+    color: #3d3d3d;
+    margin: 0px 15px;
+    font-size: 18px;
+}
+
+nav .login .a-singup{
+    font-weight: bold;
+}

@@ -1,0 +1,25 @@
+.posts{
+    width: 100%;
+}
+
+.publications{
+    width: 100%;
+    padding: 15px;
+
+    display: flex;
+    flex-direction: column;
+}
+
+.publications .post{
+    padding: 10px;
+    background: #fff;
+    border: 1px solid rgb(235,235,235);
+    border-radius: 3px;
+}
+
+.post .date{
+    width: 100%;
+    padding: 3px;
+    color: rgb(177, 177, 177);
+    margin-bottom: 10px;
+}

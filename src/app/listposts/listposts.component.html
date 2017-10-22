@@ -1,0 +1,12 @@
+<section class="posts">
+
+  <div class="publications" *ngFor="let pt of posts">
+    <div class="post">
+      <div class="date">
+        {{pt.date | date:'d/M/y H:m'}}
+      </div>
+      <p>{{pt.post}}</p>
+    </div>
+  </div>
+
+</section>
