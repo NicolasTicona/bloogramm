@@ -1,0 +1,75 @@
+.container{
+    width: 40%;
+    margin: auto;
+}
+
+h3{
+    font-size: 45px;
+    color: #3d3d3d;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+form{
+    width: 100%;
+    padding: 30px;
+    background: #fff;
+    border: 1px solid rgb(205, 205, 205);
+    border-radius: 3px;
+}
+
+form input{
+    width: 100%;
+    padding: 5px;
+    border: 2px solid rgb(205, 205, 205);
+    margin-bottom: 20px;
+    font-size: 20px;
+    outline: none;
+}
+
+form p{
+    margin-bottom: 40px;
+}
+
+form p a{
+    font-weight: bold;
+}
+
+.cont-btn{
+    text-align: center;
+}
+
+.cont-btn button{
+    background: #fff;
+    border: 1px solid rgba(74, 64, 219, .3);
+    color: #4a40db;
+    padding: 10px 15px;
+    font-size: 22px;
+    border-radius: 2px;
+    transition: all .3s ease;
+}
+
+.cont-btn button:disabled{
+    cursor: no-drop;    
+}
+
+.cont-btn button:hover{
+    background: #4a40db;
+    color: #fff;
+}
+
+/* Estados */
+input.ng-dirty.ng-valid{
+    border-color: rgba(68, 184, 85, .474)
+}
+
+input.ng-touched.ng-invalid{
+    border-color: rgba(243, 54, 54, .474);
+}
+
+
+@media screen and (max-width: 800px){
+    .container{
+        width: 90%;
+    }
+}

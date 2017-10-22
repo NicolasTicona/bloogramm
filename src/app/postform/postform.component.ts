@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { FormControl, FormGroup, FormBuilder } from '@angular/forms';
 import { PostsService } from '../servicios/posts.service';
+import { AutenticationService } from '../servicios/autentication.service';
 import * as firebase from 'firebase';
 
 @Component({ 
@@ -14,9 +15,11 @@ export class PostformComponent implements OnInit {
   post: any = {
     post: '',
   };
+  email: any;
 
   constructor(private formBuilder: FormBuilder,
-              private postsService: PostsService ) { }
+              private postsService: PostsService,
+              private autenticationService: AutenticationService ) { }
 
   ngOnInit() {
     this.postForm = this.formBuilder.group({
@@ -35,9 +38,17 @@ export class PostformComponent implements OnInit {
   onSave(){
     let post = {
       post: this.postForm.get('post').value,
+      email: this.Email(),
       date: new Date()
     }
     return post;
   }
 
+  isAuth(){
+    return this.autenticationService.isAuthenticated();
+  }
+
+  Email(){
+    return this.autenticationService.getEmailUser() ;
+  }
 }

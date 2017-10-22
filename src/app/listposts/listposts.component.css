@@ -22,4 +22,10 @@
     padding: 3px;
     color: rgb(177, 177, 177);
     margin-bottom: 10px;
+    position: relative;
+    overflow: hidden;
+}
+
+.post .date p{
+    width: 100%;
 }

@@ -9,11 +9,16 @@ import { HeaderComponent } from './header/header.component';
 import { PostformComponent } from './postform/postform.component';
 import { HomepageComponent } from './homepage/homepage.component';
 import { ListpostsComponent } from './listposts/listposts.component';
+import { SignupComponent } from './register/signup/signup.component';
+import { LoginComponent } from './register/login/login.component';
 
 import { PostsService } from './servicios/posts.service';
+import { AutenticationService } from './servicios/autentication.service';
 
 const route: Routes = [
   {path: '', component: HomepageComponent},
+  {path: 'registro', component: SignupComponent},
+  {path: 'login', component: LoginComponent},
   {path: '**', component: HomepageComponent}
 ]
 
@@ -23,7 +28,9 @@ const route: Routes = [
     HeaderComponent,
     PostformComponent,
     HomepageComponent,
-    ListpostsComponent
+    ListpostsComponent,
+    SignupComponent,
+    LoginComponent,
   ],
   imports: [
     BrowserModule,
@@ -32,7 +39,7 @@ const route: Routes = [
     HttpModule,
     RouterModule.forRoot(route),
   ],
-  providers: [PostsService],
+  providers: [PostsService,AutenticationService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

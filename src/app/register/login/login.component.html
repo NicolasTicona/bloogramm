@@ -1,0 +1,17 @@
+<div class="container">
+  
+    <h3>LogIn</h3>
+  
+    <form [formGroup]="loginForm" (ngSubmit)="onSubmit()" >
+  
+      <input type="email" placeholder="Email" formControlName="email" >
+      <input type="password" placeholder="Password" formControlName="password">
+  
+      <p>¿Aún no tiene cuenta? <a routerLink="/registro">SignUp</a></p>
+  
+      <div class="cont-btn">
+          <button type="submit" [disabled]="!loginForm.valid" >Entrar</button>        
+      </div>
+    </form>
+  
+  </div>

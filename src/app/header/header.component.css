@@ -35,7 +35,10 @@ nav .login a{
     font-size: 18px;
 }
 
-nav .login .a-singup{
+nav .login .a-signup{
+    font-weight: bold;
+}
+nav .login .a-logout{
     font-weight: bold;
 }
 

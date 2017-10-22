@@ -2,12 +2,13 @@
 
   <nav>
     <div class="nav-logo">
-      <h2>Bloogramm</h2>
+      <h2>Bloogramm </h2>
     </div>
 
     <div class="login">
-      <a href="" class="a-login" routerLink="/login" >LogIn</a>
-      <a href="" class="a-singup" routerLink="/registro" >SingUp</a>
+      <a href="" class="a-login" routerLink="/login" *ngIf="!isAuth()" >LogIn</a>
+      <a href="" class="a-signup" routerLink="/registro" *ngIf="!isAuth()">SignUp</a>
+      <a href="" class="a-logout" (click)="LogOut()" *ngIf="isAuth()">LogOut</a>
     </div>
    
   </nav>
