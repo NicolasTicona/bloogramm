@@ -10,8 +10,6 @@ export class ListpostsComponent implements OnInit {
 
   posts: any = [];
 
-  postkey: any;
-
   constructor(private postsService: PostsService) { }
 
   ngOnInit() {
@@ -20,7 +18,7 @@ export class ListpostsComponent implements OnInit {
         for(const id in posts){
           const p = posts[id];
           p.id = id;
-          this.posts.push(posts[id]);
+          this.posts.unshift(posts[id]);
         }
       })
   }
